@@ -3,13 +3,13 @@ const mongoose = require('mongoose')
 const app = express()
 const Product = require('./models/productModel')
 
-app.use(express.json());
+app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
 //routes
 
 app.get('/',(req,res)=>{
-    res.send('Hello NODE API2')
+    res.send('Hello NODE API')
 })
 
 app.get('/blog',(req,res)=>{
